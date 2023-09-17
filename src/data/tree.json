@@ -1,0 +1,76 @@
+{
+  "id": 13,
+  "title": "Lesson Order Testing",
+  "type": "Course",
+  "depth": 0,
+  "children": [
+    {
+      "id": 56,
+      "title": "1st-level Mod-1",
+      "type": "Courses::Section",
+      "depth": 1,
+      "children": [
+        {
+          "id": 57,
+          "title": "2nd-level Mod-1",
+          "type": "Courses::Section",
+          "depth": 2,
+          "children": [
+            {
+              "id": 58,
+              "title": "3rd-level Mod-1",
+              "type": "Courses::Section",
+              "depth": 3,
+              "children": []
+            },
+            {
+              "id": 88,
+              "title": "3rd-level Mod-2",
+              "type": "Courses::Section",
+              "depth": 3,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": "1st-level Mod-2",
+      "type": "Courses::Section",
+      "depth": 1,
+      "children": [
+        {
+          "id": 60,
+          "title": "2nd-level Mod-2",
+          "type": "Courses::Section",
+          "depth": 2,
+          "children": [
+            {
+              "id": 61,
+              "title": "3rd-level Mod-2",
+              "type": "Courses::Section",
+              "depth": 3,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "title": "1st-level Mod-3",
+      "type": "Courses::Section",
+      "depth": 1,
+      "children": [
+        {
+          "id": 63,
+          "title": "2nd-level Mod-3",
+          "type": "Courses::Section",
+          "depth": 2,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

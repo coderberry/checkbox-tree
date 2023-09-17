@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkbox Tree</title>
+</head>
+
+<body class="p-8">
+
+  <form>
+    <div data-controller="checkbox-tree" 
+         class="checkbox-tree"
+         data-checkbox-tree-checked="[13,58]"
+         data-checkbox-tree-parent-input-name="course_id"
+         data-checkbox-tree-child-input-name="section_ids[]">
+      <template data-checkbox-tree-target="template">
+        <div class="checkbox-tree__tree" data-checkbox-tree-target="tree" data-id="" data-open="false">
+          <div class="checkbox-tree__label-container">
+            <div class="checkbox-tree__spacer flex-none" data-checkbox-tree-target="spacer"></div>
+            <div class="checkbox-tree__toggler flex-none" 
+                 data-checkbox-tree-target="toggler"
+                 data-action="click->checkbox-tree#toggleHidden">
+              <svg xmlns="http://www.w3.org/2000/svg" data-checkbox-tree-target="chevron" height="0.8em"
+                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+              </svg>
+            </div>
+            <input type="checkbox" class="checkbox-tree__checkbox flex-none" 
+              data-checkbox-tree-target="checkbox"
+              data-action="change->checkbox-tree#toggleCheckbox" />
+            <span class="checkbox-tree__label" data-checkbox-tree-target="label"></span>
+          </div>
+          <div class="checkbox-tree__children" data-checkbox-tree-target="children"></div>
+        </div>
+      </template>
+      <div class="checkbox-tree__container" data-checkbox-tree-target="container"></div>
+    </div>
+  </form>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

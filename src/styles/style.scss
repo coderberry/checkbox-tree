@@ -1,0 +1,61 @@
+body {
+  @apply bg-gray-100;
+}
+
+.checkbox-tree {
+  &__container {
+    @apply bg-white rounded shadow-lg p-2;
+  }
+
+  &__tree {
+    &--root {
+      @apply font-semibold;
+    }
+
+    &[data-open="false"] {
+      & > .checkbox-tree__toggler svg {
+        @apply rotate-0;
+      }
+
+      & > .checkbox-tree__children {
+        @apply hidden;
+      }
+    }
+
+    &[data-open="true"] {
+      & > .checkbox-tree__toggler svg {
+        @apply rotate-90;
+      }
+
+      & > .checkbox-tree__children {
+        @apply block;
+      }
+    }
+
+    &[data-open="true"]>.checkbox-tree__children {
+      @apply block;
+    }
+  }
+
+  &__label-container {
+    @apply flex flex-row space-x-2 justify-start align-middle items-center;
+
+    &__spacer {
+      @apply bg-pink-100;
+    }
+  }
+
+  &__toggler {
+    @apply cursor-pointer;
+
+    svg {}
+  }
+
+  &__checkbox {
+    @apply bg-orange-100;
+  }
+
+  &__children {
+    @apply bg-blue-100;
+  }
+}
